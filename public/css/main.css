@@ -181,6 +181,10 @@ Noticias |INICIO|
 }
 .inicio-caja-noticias{
     margin-top: 2rem;
+    padding: 0.2rem;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
 }
 .noticia-box{
     box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
