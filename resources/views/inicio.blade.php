@@ -11,7 +11,7 @@
  <script src="{{asset('js/main.js')}}"></script>
 @endsection
 @section('content')
-<x-decoracionSuperior/>
+<x-decoracion-superior/>
 <header>
     <x-navbar/>
 </header>
@@ -40,7 +40,7 @@
                 <button class="btn1">LEER MÁS</button>
         </div>
     </div>
-    
+
  </section>
  <section class="inicio-section-noticias">
     <h2>Últimas Noticias</h2>
