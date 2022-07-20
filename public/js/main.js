@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-    carrousel(".swiper");
+    banner(".banner");
+    carrousel(".inicio-caja-noticias",".swiper-pagination-noticias");
 });
 
 /*Nav movil */
@@ -14,7 +15,7 @@ btnCloseNav.addEventListener('click',()=>{
 })
 
 
-function carrousel(clase) {
+function banner(clase) {
     const swiper = new Swiper(clase, {
         // Optional parameters
         direction: "horizontal",
@@ -23,21 +24,37 @@ function carrousel(clase) {
             delay: 5000,
         },
         loop: true,
-
-        // If we need pagination
-        pagination: {
-            el: ".swiper-pagination",
-        },
-
         // Navigation arrows
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            // el: ".swiper-scrollbar",
-        },
+        }
     });
+}
+function carrousel(clase,paginador) {
+    const  swiper = new Swiper(clase, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el:paginador,
+          clickable: true,
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            // when window width is >= 480px
+            550: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            },
+            // when window width is >= 640px
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 40
+            }
+        },
+      });
 }
