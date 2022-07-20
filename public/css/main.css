@@ -25,6 +25,7 @@ ul{
 /*Variables  y estilos globales*/
 :root{
     --mainColor:rgb(99, 170, 99);
+    --titulo: 1.9rem;
 }
 .btn-donar{
     background-color: var(--mainColor);
@@ -33,10 +34,26 @@ ul{
     border: 1px solid transparent;
     border-radius: 0.6rem;
     transition: all 0.2s;
+}
+.btn1{
+    border: 1px solid transparent;
+    padding: 0.6rem;
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
 }   
+.btn1:hover{
+    background-color: white;
+    border: var(--mainColor) 1px solid;
+    color: var(--mainColor);
+}
+.btn1:active{
+    transform: scale(1.02);
+}
 .franja-top{
     width: 100%;
-    height: 55px;
+    height: 45px;
     background-color: var(--mainColor);
 }
 .clogo{
@@ -67,7 +84,7 @@ NavBar
     position: sticky;
     top: 0;
     display: flex;
-    gap: 45px;
+    gap: 24px;
     padding: 1rem 6rem;
     font-size: 1.1rem;
 }
@@ -117,6 +134,44 @@ header .nav-movil.active{
     transform: translateX(-280px);
 }
 /*
+=====================================
+Quienes Somos | INICIO |
+=====================================
+*/
+.inicio-section-qsomos{
+    margin-top: 2rem;
+}
+.inicio-section-qsomos h2{
+    text-align: center;
+    margin: 0.5rem;
+    font-size: var(--titulo);
+}
+.inicio-caja-qsomos{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.inicio-caja-qsomos>div:nth-child(1){
+    overflow: hidden;
+    border-radius: 1rem;
+    flex:0 1 450px;
+    height: 300px;
+}
+.inicio-caja-qsomos>div:nth-child(2){
+    flex:1 1 400px;
+    letter-spacing: 0.15rem;
+}
+.inicio-caja-qsomos>div:nth-child(2)>button{
+    margin-top: 0.8rem;
+}
+/*
+======================
+Noticias |INICIO|
+======================
+*/
+/*
 =======================
 RESPONSIVE
 ======================== 
@@ -136,6 +191,7 @@ RESPONSIVE
 
 }
 @media(max-width:990px){
+    /*Decoracion superior */
     .franja-top{
         height: 35px;
     }

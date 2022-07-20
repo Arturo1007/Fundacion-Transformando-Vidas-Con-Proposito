@@ -1,5 +1,5 @@
 <!-- Slider main container -->
-<div class="swiper" style="height: 500px;">
+<div class="swiper" style="height: 480px;">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->

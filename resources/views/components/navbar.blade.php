@@ -3,8 +3,9 @@
         <ul class="container">
             <li class="logo"><img src="{{asset('assets/images/logo.png')}}" alt=""></li>
             <li class="mhidden"><a href="#">INICIO</a></li>
-            <li class="mhidden"><a href="#">QUIENES SOMOS</a></li>
-            <li class="mhidden"><a href="#">PROGRAMAS Y SERVICIOS</a></li>
+            <li class="mhidden"><a href="#">QUIÉNES SOMOS</a></li>
+            <li class="mhidden"><a href="#">PROYECTOS Y SERVICIOS</a></li>
+            <li class="mhidden"><a href="#">PROGRAMAS</a></li>
             <li class="mhidden"><a href="#">CONTACTANOS</a></li>
             <li class="mhidden"><a href="#" class="btn-donar">DONAR</a></li>
             <li><img src="{{asset('assets/icons/hamburger.svg')}}" id="nav-toggler"></li>
