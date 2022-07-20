@@ -40,6 +40,7 @@
                 <button class="btn1">LEER MÁS</button>
         </div>
     </div>
+    
  </section>
  <section class="inicio-section-noticias">
     <h2>Últimas Noticias</h2>
